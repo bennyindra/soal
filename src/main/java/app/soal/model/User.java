@@ -29,7 +29,7 @@ public class User extends DiscountAbstract {
 
 
 	@Override
-	Double getDiscount() {
+	Double getUserDiscount() {
 		Calendar calendar = Calendar.getInstance();
 		calendar.setTime(getJoinDate());
 		calendar.add(Calendar.YEAR, +2);

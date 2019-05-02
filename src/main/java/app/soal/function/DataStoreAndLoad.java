@@ -11,19 +11,7 @@ public class DataStoreAndLoad {
 	public static final String KEY = "KEY";
 	public static final String VALUE = "VALUE";
 	
-	@SuppressWarnings("unchecked")
-	public static final Map<String, String>[] sampleDataArray(){
-		Map<String, String>[] array = new HashMap[10];
-
-		for (int j = 0; j < 10; j++) {
-			Map<String, String> map = new HashMap<>();
-			for (int i = 1; i <= 2; i++) {
-				map.put(KEY + j+i, VALUE + j+i);
-			}
-			array[j] = map;
-		}
-		return array;
-	}
+	
 
 	@SuppressWarnings("unchecked")
 	public static Map<String,String>[] load(String deserialized) {
